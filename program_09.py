@@ -141,5 +141,5 @@ if __name__ == '__main__':
     
     print("\nAll processing finished.....\n", DataDF.describe())
     print("\nFinal changed values counts.....\n", ReplacedValuesDF)
-    DataDF.to_csv('corrected_data.csv',sep='\t')
-    ReplacedValuesDF.to_csv("failed_checks_summar.csv",sep='\t')
+    DataDF.to_csv('corrected_data.csv', sep=' ')
+    ReplacedValuesDF.to_csv("failed_checks_summar.csv",sep=' ')
