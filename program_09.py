@@ -88,7 +88,7 @@ def Check04_TmaxTminRange( DataDF, ReplacedValuesDF ):
     
     count= len(DataDF.loc[(DataDF['Max Temp']-DataDF['Min Temp']>25)]) # counts where range of temp greater than 25
     DataDF.loc[(DataDF['Max Temp']-DataDF['Min Temp']>25),['Min Temp','Max Temp']]=np.nan # points satisfying given condition set to NaN
-    ReplacedValuesDF.loc['4. Range', :]=[0,count,count,0]
+    ReplacedValuesDF.loc['4. Range Fail', :]=[0,count,count,0]
  
     return( DataDF, ReplacedValuesDF )
 
